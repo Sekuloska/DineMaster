@@ -1,0 +1,36 @@
+﻿@model List<Restaurant.Domain.Domain.MenuItem>
+
+
+<h1>Items for Menu</h1>
+
+@for(int i = 0; i < Model.Count; i++)
+{
+     var item = Model[i];
+    if (i % 3 == 0)
+    {
+        @:<div class="row">
+    }
+
+    <div class="col-md-3">
+        <div class="card" style="width: 18rem; height: 30rem;">
+            <img class="card-img-top" src="@item.ItemImage" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Name: @item.Name</h5>
+                <p class="card-text">Description: @item.Description</p>
+                <p class="card-text">Price: @item.Price</p>
+                
+
+                <a asp-controller="MenuItems" asp-action="AddToCart" asp-route-itemId="@item.Id" class="btn btn-primary">Add to Shopping Cart</a>
+                 
+            
+            </div>
+        </div>
+    </div>
+
+    if(i % 3 == 2)
+    {
+        @:</div>
+    }
+}
+
+

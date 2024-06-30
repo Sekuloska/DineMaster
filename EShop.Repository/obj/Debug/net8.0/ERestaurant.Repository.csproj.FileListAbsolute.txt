@@ -1,0 +1,15 @@
+D:\Visual Studio\k\EShopApplication\EShop.Repository\bin\Debug\net8.0\ERestaurant.Repository.deps.json
+D:\Visual Studio\k\EShopApplication\EShop.Repository\bin\Debug\net8.0\ERestaurant.Repository.dll
+D:\Visual Studio\k\EShopApplication\EShop.Repository\bin\Debug\net8.0\ERestaurant.Repository.pdb
+D:\Visual Studio\k\EShopApplication\EShop.Repository\bin\Debug\net8.0\ERestaurant.Domain.dll
+D:\Visual Studio\k\EShopApplication\EShop.Repository\bin\Debug\net8.0\ERestaurant.Domain.pdb
+D:\Visual Studio\k\EShopApplication\EShop.Repository\obj\Debug\net8.0\ERestaurant.Repository.csproj.AssemblyReference.cache
+D:\Visual Studio\k\EShopApplication\EShop.Repository\obj\Debug\net8.0\ERestaurant.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio\k\EShopApplication\EShop.Repository\obj\Debug\net8.0\ERestaurant.Repository.AssemblyInfoInputs.cache
+D:\Visual Studio\k\EShopApplication\EShop.Repository\obj\Debug\net8.0\ERestaurant.Repository.AssemblyInfo.cs
+D:\Visual Studio\k\EShopApplication\EShop.Repository\obj\Debug\net8.0\ERestaurant.Repository.csproj.CoreCompileInputs.cache
+D:\Visual Studio\k\EShopApplication\EShop.Repository\obj\Debug\net8.0\ERestaur.2A9EA1CF.Up2Date
+D:\Visual Studio\k\EShopApplication\EShop.Repository\obj\Debug\net8.0\ERestaurant.Repository.dll
+D:\Visual Studio\k\EShopApplication\EShop.Repository\obj\Debug\net8.0\refint\ERestaurant.Repository.dll
+D:\Visual Studio\k\EShopApplication\EShop.Repository\obj\Debug\net8.0\ERestaurant.Repository.pdb
+D:\Visual Studio\k\EShopApplication\EShop.Repository\obj\Debug\net8.0\ref\ERestaurant.Repository.dll

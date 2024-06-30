@@ -1,0 +1,27 @@
+﻿@model List<Restaurant.Domain.Domain.Menu>
+
+<h1>Menus for Restaurant</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Active</th>
+            <th>#</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var menu in Model)
+        {
+            <tr>
+                <td>@menu.Name</td>
+                <td>@menu.Description</td>
+                <td>@(menu.IsActive ? "Yes" : "No")</td>
+                <td>
+                    <a asp-controller="MenuItems" asp-action="ListAllItemsInTheMenu" asp-route-menuId="@menu.Id" class="btn btn-primary">See Items</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

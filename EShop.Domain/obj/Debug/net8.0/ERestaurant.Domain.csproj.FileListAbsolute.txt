@@ -1,0 +1,12 @@
+D:\Visual Studio\k\EShopApplication\EShop.Domain\bin\Debug\net8.0\ERestaurant.Domain.deps.json
+D:\Visual Studio\k\EShopApplication\EShop.Domain\bin\Debug\net8.0\ERestaurant.Domain.dll
+D:\Visual Studio\k\EShopApplication\EShop.Domain\bin\Debug\net8.0\ERestaurant.Domain.pdb
+D:\Visual Studio\k\EShopApplication\EShop.Domain\obj\Debug\net8.0\ERestaurant.Domain.csproj.AssemblyReference.cache
+D:\Visual Studio\k\EShopApplication\EShop.Domain\obj\Debug\net8.0\ERestaurant.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio\k\EShopApplication\EShop.Domain\obj\Debug\net8.0\ERestaurant.Domain.AssemblyInfoInputs.cache
+D:\Visual Studio\k\EShopApplication\EShop.Domain\obj\Debug\net8.0\ERestaurant.Domain.AssemblyInfo.cs
+D:\Visual Studio\k\EShopApplication\EShop.Domain\obj\Debug\net8.0\ERestaurant.Domain.csproj.CoreCompileInputs.cache
+D:\Visual Studio\k\EShopApplication\EShop.Domain\obj\Debug\net8.0\ERestaurant.Domain.dll
+D:\Visual Studio\k\EShopApplication\EShop.Domain\obj\Debug\net8.0\refint\ERestaurant.Domain.dll
+D:\Visual Studio\k\EShopApplication\EShop.Domain\obj\Debug\net8.0\ERestaurant.Domain.pdb
+D:\Visual Studio\k\EShopApplication\EShop.Domain\obj\Debug\net8.0\ref\ERestaurant.Domain.dll
