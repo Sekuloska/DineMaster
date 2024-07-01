@@ -2,11 +2,10 @@
 
 <h1>Edit</h1>
 
-<h4>Restaurant</h4>
 
-<div class="row">
+<div class="row content">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <form asp-action="Edit" style="color:white;">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
@@ -54,14 +53,14 @@
 
 
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" style="color:white; text-decoration:none;" class="btn">Back to List</a>
 </div>
 
 @section Scripts {
@@ -69,3 +68,52 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+<style>
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top:10px;
+        background-color: rgba(180, 178, 178, 0.5);
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    }
+
+        .btn:hover {
+            background-color: rgba(180, 178, 178, 0.5);
+            color: black;
+            transform: scale(1.1);
+        }
+
+        .btn:focus {
+            outline: none; 
+        }
+
+        .btn:active {
+            transform: scale(0.95); 
+        }
+
+    .content {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        margin: 20px auto;
+        width: 80%;
+        border-radius: 10px;
+        justify-content:center;
+    }
+
+        .content dl dt, .content dl dd {
+            font-size: 18px;
+        }
+
+        .content hr {
+            color: white;
+            border-top: 2px solid white;
+        }
+</style>

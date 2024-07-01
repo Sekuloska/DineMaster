@@ -10,3 +10,16 @@ D:\Visual Studio\k\EShopApplication\EShop.Domain\obj\Debug\net8.0\ERestaurant.Do
 D:\Visual Studio\k\EShopApplication\EShop.Domain\obj\Debug\net8.0\refint\ERestaurant.Domain.dll
 D:\Visual Studio\k\EShopApplication\EShop.Domain\obj\Debug\net8.0\ERestaurant.Domain.pdb
 D:\Visual Studio\k\EShopApplication\EShop.Domain\obj\Debug\net8.0\ref\ERestaurant.Domain.dll
+C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.Domain\bin\Debug\net8.0\ERestaurant.Domain.deps.json
+C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.Domain\bin\Debug\net8.0\ERestaurant.Domain.dll
+C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.Domain\bin\Debug\net8.0\ERestaurant.Domain.pdb
+C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.Domain\obj\Debug\net8.0\ERestaurant.Domain.csproj.AssemblyReference.cache
+C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.Domain\obj\Debug\net8.0\ERestaurant.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.Domain\obj\Debug\net8.0\ERestaurant.Domain.AssemblyInfoInputs.cache
+C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.Domain\obj\Debug\net8.0\ERestaurant.Domain.AssemblyInfo.cs
+C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.Domain\obj\Debug\net8.0\ERestaurant.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.Domain\obj\Debug\net8.0\ERestaurant.Domain.sourcelink.json
+C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.Domain\obj\Debug\net8.0\ERestaurant.Domain.dll
+C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.Domain\obj\Debug\net8.0\refint\ERestaurant.Domain.dll
+C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.Domain\obj\Debug\net8.0\ERestaurant.Domain.pdb
+C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.Domain\obj\Debug\net8.0\ref\ERestaurant.Domain.dll

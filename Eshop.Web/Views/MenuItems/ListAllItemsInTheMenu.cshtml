@@ -1,36 +1,85 @@
 ﻿@model List<Restaurant.Domain.Domain.MenuItem>
 
-
 <h1>Items for Menu</h1>
 
-@for(int i = 0; i < Model.Count; i++)
-{
-     var item = Model[i];
-    if (i % 3 == 0)
-    {
-        @:<div class="row">
+<div class="container">
+    <ul class="list-group">
+        @foreach (var item in Model)
+        {
+            <li class="list-group-item d-flex align-items-center">
+                <img src="@item.ItemImage" alt="Item image" class="item-image">
+                <div class="item-details ml-3">
+                    <h5 class="item-title">Name: @item.Name</h5>
+                    <p class="item-description">Description: @item.Description</p>
+                    <p class="item-price">Price: @item.Price</p>
+                    <a asp-controller="MenuItems" asp-action="AddToCart" asp-route-itemId="@item.Id" class="btn">Add to Shopping Cart</a>
+                </div>
+            </li>
+        }
+    </ul>
+</div>
+
+<style>
+    .list-group-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.5);
+        color:white;
     }
 
-    <div class="col-md-3">
-        <div class="card" style="width: 18rem; height: 30rem;">
-            <img class="card-img-top" src="@item.ItemImage" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Name: @item.Name</h5>
-                <p class="card-text">Description: @item.Description</p>
-                <p class="card-text">Price: @item.Price</p>
-                
-
-                <a asp-controller="MenuItems" asp-action="AddToCart" asp-route-itemId="@item.Id" class="btn btn-primary">Add to Shopping Cart</a>
-                 
-            
-            </div>
-        </div>
-    </div>
-
-    if(i % 3 == 2)
-    {
-        @:</div>
+    .item-image {
+        width: 100px; /* Smaller image width */
+        height: 100px; /* Smaller image height */
+        object-fit: cover;
+        border-radius: 8px; /* Optional: add rounded corners */
     }
-}
 
+    .item-details {
+        flex: 1;
+        padding-left: 15px;
+    }
 
+    .item-title {
+        font-size: 1.25rem;
+        margin-bottom: 5px;
+    }
+
+    .item-description {
+        margin-bottom: 10px;
+    }
+
+    .item-price {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        margin-right: 20px;
+        background-color: rgba(180, 178, 178, 0.3);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    }
+
+        .btn:hover {
+            background-color: rgba(180, 178, 178, 0.5);
+            color: black;
+            transform: scale(1.1);
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+</style>

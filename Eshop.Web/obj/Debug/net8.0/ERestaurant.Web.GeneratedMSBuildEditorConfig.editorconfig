@@ -17,111 +17,111 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ERestaurant.Web
 build_property.RootNamespace = ERestaurant.Web
-build_property.ProjectDir = D:\Visual Studio\k\EShopApplication\Eshop.Web\
+build_property.ProjectDir = C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\Eshop.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Visual Studio\k\EShopApplication\Eshop.Web
+build_property.MSBuildProjectDirectory = C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\Eshop.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/Home/Index.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/Home/Privacy.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/Menues/Create.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/Menues/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/Menues/ListMenusForRestaurant.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/Menues/ListMenusForRestaurant.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudWVzXExpc3RNZW51c0ZvclJlc3RhdXJhbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/MenuItems/AddToCart.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/MenuItems/AddToCart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUl0ZW1zXEFkZFRvQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/MenuItems/CreateMenuItem.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/MenuItems/CreateMenuItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUl0ZW1zXENyZWF0ZU1lbnVJdGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/MenuItems/ListAllItemsInTheMenu.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/MenuItems/ListAllItemsInTheMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUl0ZW1zXExpc3RBbGxJdGVtc0luVGhlTWVudS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/Restaurants/Create.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/Restaurants/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/Restaurants/Delete.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/Restaurants/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/Restaurants/Edit.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/Restaurants/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/Restaurants/Index.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/Restaurants/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/Shared/Error.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/ShoppingCarts/Index.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/ShoppingCarts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/ShoppingCarts/SuccessPayment.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/ShoppingCarts/SuccessPayment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0c1xTdWNjZXNzUGF5bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/_ViewImports.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/_ViewStart.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/k/EShopApplication/Eshop.Web/Views/Shared/_Layout.cshtml]
+[C:/Users/Monika Caneva/OneDrive/Desktop/Integrated-Systems-Restaurant-App/Eshop.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hpbozr7skk

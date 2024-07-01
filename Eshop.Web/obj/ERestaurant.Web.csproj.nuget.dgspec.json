@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual Studio\\k\\EShopApplication\\Eshop.Web\\ERestaurant.Web.csproj": {}
+    "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\ERestaurant.Web.csproj": {}
   },
   "projects": {
-    "D:\\Visual Studio\\k\\EShopApplication\\EShop.Domain\\ERestaurant.Domain.csproj": {
+    "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio\\k\\EShopApplication\\EShop.Domain\\ERestaurant.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj",
         "projectName": "ERestaurant.Domain",
-        "projectPath": "D:\\Visual Studio\\k\\EShopApplication\\EShop.Domain\\ERestaurant.Domain.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio\\k\\EShopApplication\\EShop.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj",
+        "packagesPath": "C:\\Users\\Monika Caneva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Monika Caneva\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -75,21 +70,17 @@
         }
       }
     },
-    "D:\\Visual Studio\\k\\EShopApplication\\EShop.Repository\\ERestaurant.Repository.csproj": {
+    "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Repository\\ERestaurant.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio\\k\\EShopApplication\\EShop.Repository\\ERestaurant.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Repository\\ERestaurant.Repository.csproj",
         "projectName": "ERestaurant.Repository",
-        "projectPath": "D:\\Visual Studio\\k\\EShopApplication\\EShop.Repository\\ERestaurant.Repository.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio\\k\\EShopApplication\\EShop.Repository\\obj\\",
+        "projectPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Repository\\ERestaurant.Repository.csproj",
+        "packagesPath": "C:\\Users\\Monika Caneva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Repository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Monika Caneva\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,15 +88,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Visual Studio\\k\\EShopApplication\\EShop.Domain\\ERestaurant.Domain.csproj": {
-                "projectPath": "D:\\Visual Studio\\k\\EShopApplication\\EShop.Domain\\ERestaurant.Domain.csproj"
+              "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj": {
+                "projectPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj"
               }
             }
           }
@@ -154,21 +144,17 @@
         }
       }
     },
-    "D:\\Visual Studio\\k\\EShopApplication\\EShop.Service\\ERestaurant.Service.csproj": {
+    "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Service\\ERestaurant.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio\\k\\EShopApplication\\EShop.Service\\ERestaurant.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Service\\ERestaurant.Service.csproj",
         "projectName": "ERestaurant.Service",
-        "projectPath": "D:\\Visual Studio\\k\\EShopApplication\\EShop.Service\\ERestaurant.Service.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio\\k\\EShopApplication\\EShop.Service\\obj\\",
+        "projectPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Service\\ERestaurant.Service.csproj",
+        "packagesPath": "C:\\Users\\Monika Caneva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Service\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Monika Caneva\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -176,18 +162,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Visual Studio\\k\\EShopApplication\\EShop.Domain\\ERestaurant.Domain.csproj": {
-                "projectPath": "D:\\Visual Studio\\k\\EShopApplication\\EShop.Domain\\ERestaurant.Domain.csproj"
+              "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj": {
+                "projectPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj"
               },
-              "D:\\Visual Studio\\k\\EShopApplication\\EShop.Repository\\ERestaurant.Repository.csproj": {
-                "projectPath": "D:\\Visual Studio\\k\\EShopApplication\\EShop.Repository\\ERestaurant.Repository.csproj"
+              "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Repository\\ERestaurant.Repository.csproj": {
+                "projectPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Repository\\ERestaurant.Repository.csproj"
               }
             }
           }
@@ -236,21 +221,17 @@
         }
       }
     },
-    "D:\\Visual Studio\\k\\EShopApplication\\Eshop.Web\\ERestaurant.Web.csproj": {
+    "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\ERestaurant.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio\\k\\EShopApplication\\Eshop.Web\\ERestaurant.Web.csproj",
+        "projectUniqueName": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\ERestaurant.Web.csproj",
         "projectName": "ERestaurant.Web",
-        "projectPath": "D:\\Visual Studio\\k\\EShopApplication\\Eshop.Web\\ERestaurant.Web.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio\\k\\EShopApplication\\Eshop.Web\\obj\\",
+        "projectPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\ERestaurant.Web.csproj",
+        "packagesPath": "C:\\Users\\Monika Caneva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Monika Caneva\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -258,21 +239,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Visual Studio\\k\\EShopApplication\\EShop.Domain\\ERestaurant.Domain.csproj": {
-                "projectPath": "D:\\Visual Studio\\k\\EShopApplication\\EShop.Domain\\ERestaurant.Domain.csproj"
+              "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj": {
+                "projectPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj"
               },
-              "D:\\Visual Studio\\k\\EShopApplication\\EShop.Repository\\ERestaurant.Repository.csproj": {
-                "projectPath": "D:\\Visual Studio\\k\\EShopApplication\\EShop.Repository\\ERestaurant.Repository.csproj"
+              "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Repository\\ERestaurant.Repository.csproj": {
+                "projectPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Repository\\ERestaurant.Repository.csproj"
               },
-              "D:\\Visual Studio\\k\\EShopApplication\\EShop.Service\\ERestaurant.Service.csproj": {
-                "projectPath": "D:\\Visual Studio\\k\\EShopApplication\\EShop.Service\\ERestaurant.Service.csproj"
+              "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Service\\ERestaurant.Service.csproj": {
+                "projectPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Service\\ERestaurant.Service.csproj"
               }
             }
           }
