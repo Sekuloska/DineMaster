@@ -33,3 +33,21 @@ C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.
 C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\obj\Debug\net8.0\refint\ERestaurant.Service.dll
 C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\obj\Debug\net8.0\ERestaurant.Service.pdb
 C:\Users\Monika Caneva\OneDrive\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\obj\Debug\net8.0\ref\ERestaurant.Service.dll
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\bin\Debug\net8.0\ERestaurant.Service.deps.json
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\bin\Debug\net8.0\ERestaurant.Service.dll
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\bin\Debug\net8.0\ERestaurant.Service.pdb
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\bin\Debug\net8.0\ERestaurant.Domain.dll
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\bin\Debug\net8.0\ERestaurant.Repository.dll
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\bin\Debug\net8.0\ERestaurant.Domain.pdb
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\bin\Debug\net8.0\ERestaurant.Repository.pdb
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\obj\Debug\net8.0\ERestaurant.Service.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\obj\Debug\net8.0\ERestaurant.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\obj\Debug\net8.0\ERestaurant.Service.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\obj\Debug\net8.0\ERestaurant.Service.AssemblyInfo.cs
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\obj\Debug\net8.0\ERestaurant.Service.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\obj\Debug\net8.0\ERestaurant.Service.sourcelink.json
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\obj\Debug\net8.0\ERestaur.895C49B2.Up2Date
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\obj\Debug\net8.0\ERestaurant.Service.dll
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\obj\Debug\net8.0\refint\ERestaurant.Service.dll
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\obj\Debug\net8.0\ERestaurant.Service.pdb
+C:\Users\User\Desktop\Integrated-Systems-Restaurant-App\EShop.Service\obj\Debug\net8.0\ref\ERestaurant.Service.dll

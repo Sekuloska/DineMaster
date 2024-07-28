@@ -11,6 +11,14 @@ namespace Restaurant.Domain.Domain
 {
     public class Order:BaseEntity
     {
+
+        public Order()
+        {
+            Reviews = new HashSet<Review>();
+            ItemInOrders = new HashSet<ItemInOrder>();
+            Deliveries = new HashSet<Delivery>();
+        }
+
         public string? userId { get; set; }
         public CostumerUser? User { get; set; }
         public Guid? RestaurantId { get; set; }
@@ -21,6 +29,7 @@ namespace Restaurant.Domain.Domain
         public string? DeliveryAddress { get; set; }
         public virtual ICollection<Review>? Reviews { get; set; }
         public virtual ICollection<ItemInOrder>? ItemInOrders { get; set; }
+        public virtual ICollection<Delivery> Deliveries { get; set; }
 
 
 

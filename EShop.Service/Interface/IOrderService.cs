@@ -13,5 +13,6 @@ namespace EShop.Service.Interface
     {
         List<Order> GetAllOrders();
         Order GetDetailsForOrder(BaseEntity model);
+        Task<IEnumerable<Order>> GetAllOrdersAsync();
     }
 }

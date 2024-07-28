@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj": {}
+    "C:\\Users\\User\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj": {
+    "C:\\Users\\User\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj",
         "projectName": "ERestaurant.Domain",
-        "projectPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj",
-        "packagesPath": "C:\\Users\\Monika Caneva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\ERestaurant.Domain.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Monika Caneva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

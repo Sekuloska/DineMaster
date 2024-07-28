@@ -8,8 +8,9 @@ namespace Restaurant.Domain.Enum
 {
     public enum DeliveryStatus
     {
-        Prepared,
-        InProgress,
+        Proccessing,
+        Prepeared,
+        Shipped,
         Delivered
     }
 }

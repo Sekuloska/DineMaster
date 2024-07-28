@@ -1,34 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Integrated-Systems-Restaurant-App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|c:\\users\\monika caneva\\onedrive\\desktop\\integrated-systems-restaurant-app\\eshop.web\\views\\restaurants\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|solutionrelative:eshop.web\\views\\restaurants\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9C3E5645-B4F3-48ED-B515-C91E001528AB}|EShop.Repository\\ERestaurant.Repository.csproj|c:\\users\\user\\desktop\\integrated-systems-restaurant-app\\eshop.repository\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3E5645-B4F3-48ED-B515-C91E001528AB}|EShop.Repository\\ERestaurant.Repository.csproj|solutionrelative:eshop.repository\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|c:\\users\\monika caneva\\onedrive\\desktop\\integrated-systems-restaurant-app\\eshop.web\\views\\menuitems\\createmenuitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|solutionrelative:eshop.web\\views\\menuitems\\createmenuitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B93236D0-60AD-43A4-802D-061FD4F5F640}|EShop.Service\\ERestaurant.Service.csproj|c:\\users\\user\\desktop\\integrated-systems-restaurant-app\\eshop.service\\implementation\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B93236D0-60AD-43A4-802D-061FD4F5F640}|EShop.Service\\ERestaurant.Service.csproj|solutionrelative:eshop.service\\implementation\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|c:\\users\\monika caneva\\onedrive\\desktop\\integrated-systems-restaurant-app\\eshop.web\\views\\menues\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|solutionrelative:eshop.web\\views\\menues\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|c:\\users\\user\\desktop\\integrated-systems-restaurant-app\\eshop.web\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|solutionrelative:eshop.web\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|c:\\users\\monika caneva\\onedrive\\desktop\\integrated-systems-restaurant-app\\eshop.web\\views\\restaurants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|solutionrelative:eshop.web\\views\\restaurants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|c:\\users\\user\\desktop\\integrated-systems-restaurant-app\\eshop.web\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|solutionrelative:eshop.web\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|c:\\users\\monika caneva\\onedrive\\desktop\\integrated-systems-restaurant-app\\eshop.web\\views\\menues\\listmenusforrestaurant.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|solutionrelative:eshop.web\\views\\menues\\listmenusforrestaurant.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|c:\\users\\monika caneva\\onedrive\\desktop\\integrated-systems-restaurant-app\\eshop.web\\views\\menuitems\\listallitemsinthemenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|solutionrelative:eshop.web\\views\\menuitems\\listallitemsinthemenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|c:\\users\\monika caneva\\onedrive\\desktop\\integrated-systems-restaurant-app\\eshop.web\\views\\restaurants\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|solutionrelative:eshop.web\\views\\restaurants\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|c:\\users\\user\\desktop\\integrated-systems-restaurant-app\\eshop.web\\views\\userorder\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CDD6E860-629E-41A0-A1E4-D9A81AD9B622}|Eshop.Web\\ERestaurant.Web.csproj|solutionrelative:eshop.web\\views\\userorder\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +30,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
             },
             {
               "$type": "Bookmark",
@@ -51,93 +67,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\Restaurants\\Create.cshtml",
-              "RelativeDocumentMoniker": "Eshop.Web\\Views\\Restaurants\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\Restaurants\\Create.cshtml",
-              "RelativeToolTip": "Eshop.Web\\Views\\Restaurants\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-01T12:34:46.637Z",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Repository\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "EShop.Repository\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Repository\\ApplicationDbContext.cs*",
+              "RelativeToolTip": "EShop.Repository\\ApplicationDbContext.cs*",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBkAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T08:53:48.706Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ListAllItemsInTheMenu.cshtml",
-              "DocumentMoniker": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\MenuItems\\ListAllItemsInTheMenu.cshtml",
-              "RelativeDocumentMoniker": "Eshop.Web\\Views\\MenuItems\\ListAllItemsInTheMenu.cshtml",
-              "ToolTip": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\MenuItems\\ListAllItemsInTheMenu.cshtml",
-              "RelativeToolTip": "Eshop.Web\\Views\\MenuItems\\ListAllItemsInTheMenu.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-01T10:56:45.002Z",
+              "DocumentIndex": 1,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Service\\Implementation\\OrderService.cs",
+              "RelativeDocumentMoniker": "EShop.Service\\Implementation\\OrderService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Integrated-Systems-Restaurant-App\\EShop.Service\\Implementation\\OrderService.cs",
+              "RelativeToolTip": "EShop.Service\\Implementation\\OrderService.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAvwCIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T08:48:54.642Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\Restaurants\\Index.cshtml",
-              "RelativeDocumentMoniker": "Eshop.Web\\Views\\Restaurants\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\Restaurants\\Index.cshtml",
-              "RelativeToolTip": "Eshop.Web\\Views\\Restaurants\\Index.cshtml",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAACwAAAAeAAAA",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "Eshop.Web\\Views\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "Eshop.Web\\Views\\Orders\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-01T10:56:06.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateMenuItem.cshtml",
-              "DocumentMoniker": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\MenuItems\\CreateMenuItem.cshtml",
-              "RelativeDocumentMoniker": "Eshop.Web\\Views\\MenuItems\\CreateMenuItem.cshtml",
-              "ToolTip": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\MenuItems\\CreateMenuItem.cshtml",
-              "RelativeToolTip": "Eshop.Web\\Views\\MenuItems\\CreateMenuItem.cshtml",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAACwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-01T10:48:05.767Z",
+              "WhenOpened": "2024-07-10T20:49:04.864Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\Menues\\Create.cshtml",
-              "RelativeDocumentMoniker": "Eshop.Web\\Views\\Menues\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\Menues\\Create.cshtml",
-              "RelativeToolTip": "Eshop.Web\\Views\\Menues\\Create.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAADIAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-01T11:22:33.315Z",
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Eshop.Web\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Eshop.Web\\Controllers\\OrdersController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAIwCEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T20:10:37.225Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ListMenusForRestaurant.cshtml",
-              "DocumentMoniker": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\Menues\\ListMenusForRestaurant.cshtml",
-              "RelativeDocumentMoniker": "Eshop.Web\\Views\\Menues\\ListMenusForRestaurant.cshtml",
-              "ToolTip": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\Menues\\ListMenusForRestaurant.cshtml",
-              "RelativeToolTip": "Eshop.Web\\Views\\Menues\\ListMenusForRestaurant.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAD8AAAAYAAAA",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\UserOrder\\Details.cshtml",
+              "RelativeDocumentMoniker": "Eshop.Web\\Views\\UserOrder\\Details.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\UserOrder\\Details.cshtml",
+              "RelativeToolTip": "Eshop.Web\\Views\\UserOrder\\Details.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAB8AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-01T10:34:17.617Z",
+              "WhenOpened": "2024-07-17T07:30:35.722Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 910,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\Restaurants\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Eshop.Web\\Views\\Restaurants\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Monika Caneva\\OneDrive\\Desktop\\Integrated-Systems-Restaurant-App\\Eshop.Web\\Views\\Restaurants\\Delete.cshtml",
-              "RelativeToolTip": "Eshop.Web\\Views\\Restaurants\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-01T11:19:27.71Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }

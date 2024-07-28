@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using EShop.Repository.Interface;
+using Microsoft.EntityFrameworkCore;
 
 namespace EShop.Service.Implementation
 {
@@ -27,6 +28,14 @@ namespace EShop.Service.Implementation
         public Order GetDetailsForOrder(BaseEntity model)
         {
             return _orderRepository.GetDetailsForOrder(model);
+        }
+
+        public async Task<IEnumerable<Order>> GetAllOrdersAsync()
+        {
+            return await DbContext.Orders
+                .Include(o => o.DeliveryPerson)
+                .Include(o => o.Status)
+                .ToListAsync();
         }
     }
 }

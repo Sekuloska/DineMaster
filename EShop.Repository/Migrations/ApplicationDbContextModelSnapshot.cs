@@ -22,6 +22,29 @@ namespace EShop.Repository.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("ERestaurant.Domain.Domain.EmailMessage", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Content")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MailTo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Subject")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("EmailMessages");
+                });
+
             modelBuilder.Entity("ERestaurant.Domain.Domain.ItemInShoppingCart", b =>
                 {
                     b.Property<Guid>("Id")
@@ -226,12 +249,10 @@ namespace EShop.Repository.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -268,12 +289,10 @@ namespace EShop.Repository.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -617,7 +636,7 @@ namespace EShop.Repository.Migrations
                         .HasForeignKey("DeliveryPersonId");
 
                     b.HasOne("Restaurant.Domain.Domain.Order", "Order")
-                        .WithMany()
+                        .WithMany("Deliveries")
                         .HasForeignKey("OrderId");
 
                     b.Navigation("DeliveryPerson");
@@ -738,6 +757,8 @@ namespace EShop.Repository.Migrations
 
             modelBuilder.Entity("Restaurant.Domain.Domain.Order", b =>
                 {
+                    b.Navigation("Deliveries");
+
                     b.Navigation("ItemInOrders");
 
                     b.Navigation("Reviews");

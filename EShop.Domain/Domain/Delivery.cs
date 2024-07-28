@@ -18,7 +18,5 @@ namespace Restaurant.Domain.Domain
         public DeliveryPerson? DeliveryPerson { get; set; }
         public DeliveryStatus? DeliveryStatus { get; set;}
         public DateFormat? DeliveryDate {  get; set; }
-
-
     }
 }
