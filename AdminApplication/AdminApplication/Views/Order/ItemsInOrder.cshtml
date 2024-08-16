@@ -1,0 +1,46 @@
+﻿@model Order
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Items in Order</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <h2>Order Details</h2>
+
+        <dl class="row">
+            <dt class="col-sm-3">Order Date</dt>
+            <dd class="col-sm-9">@Model.OrderDate</dd>
+
+            <dt class="col-sm-3">Total Amount</dt>
+            <dd class="col-sm-9">@Model.TotalAmount</dd>
+
+            <dt class="col-sm-3">Delivery Address</dt>
+            <dd class="col-sm-9">@Model.DeliveryAddress</dd>
+        </dl>
+
+        <h3>Items in Order</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Menu Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.ItemInOrders)
+                {
+                    <tr>
+                        <td>@item.MenuItem.Name</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.MenuItem.Price</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

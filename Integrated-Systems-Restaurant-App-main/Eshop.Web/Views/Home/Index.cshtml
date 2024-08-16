@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="home">
+        <h1>Welcome</h1>
+        <div class="text">
+        <p>Indulge in Flavorful Creations, Where Every Bite Tells a Story!</p>
+            <a class="kopce" id="typedLink" asp-area="" asp-controller="Restaurants" asp-action="Index"></a>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    
+    const text = "Indulge in Flavorful Creations, Where Every Bite Tells a Story!";
+    const linkText = "Hungry yet?";
+
+    function typeWriter(text, element, delay = 220) {
+        let charIndex = 0;
+        const intervalId = setInterval(() => {
+            element.textContent += text[charIndex];
+            charIndex++;
+            if (charIndex === text.length) {
+                clearInterval(intervalId);
+            }
+        }, delay);
+    }
+
+    
+    const typedTextElement = document.getElementById('typedText');
+    typeWriter(text, typedTextElement);
+
+    
+    const typedLinkElement = document.getElementById('typedLink');
+    typeWriter(linkText, typedLinkElement);
+</script>
+<style>
+    .text
+    {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        margin: 20px auto;
+        width: 80%;
+        border-radius: 10px;
+    }
+</style>

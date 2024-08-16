@@ -1,0 +1,129 @@
+﻿﻿@using EShop.Domain
+﻿@using Microsoft.Extensions.Options
+@model ERestaurant.Domain.DTO.ShoppingCartDto
+@inject IOptions<StripeSettings> Stripe
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@* <h1>Ready to pay?</h1>
+
+@if (Model.TotalPrice != 0)
+{
+    <form asp-controller="ShoppingCarts" asp-action="PayOrder" method="post" class="stripe-button">
+        <article>
+            <script src="https://checkout.stripe.com/checkout.js"
+                    class="stripe-button"
+                    data-key="@Stripe.Value.PublishableKey"
+                    data-locale="auto"
+                    data-description="EShop Application Payment"
+                    data-amount="@(Model.TotalPrice * 100)"
+                    data-label="Pay $@Model.TotalPrice">
+            </script>
+        </article>
+    </form>
+} *@
+
+<a class="btn" asp-action="MakeOrder" asp-controller="Orders">Order</a>
+<table class="table content">
+    <thead>
+        <tr>
+            <th>
+                #
+            </th>
+            <th>
+                Product name
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Quantity
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < Model.Products.Count(); i++)
+        {
+            var item = Model.Products[i];
+            <tr>
+                <td>@(i + 1)</td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MenuItem.Name)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.MenuItem.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    |
+                    <a class="btn" asp-action="DeleteFromShoppingCart" asp-controller="ShoppingCarts" asp-route-id="@item.MenuItem.Id">Remove</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+    <th><b>Total:</b></th>
+
+    <th></th>
+    <th></th>
+    <th></th>
+
+    <th><b>@Model.TotalPrice</b></th>
+
+    </tfoot>
+</table>
+<style>
+    .content {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        margin: 20px auto;
+        width: 80%;
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+        .content dl dt, .content dl dd {
+            font-size: 18px;
+        }
+
+        .content hr {
+            color: white;
+            border-top: 2px solid white;
+        }
+
+    
+    .btn {
+        display: inline-block !important;
+        padding: 12px 24px !important;
+        background-color: rgba(180, 178, 178, 0.5) !important;
+        color: black !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        border: none !important;
+        border-radius: 4px !important;
+        cursor: pointer !important;
+        font-size: 16px !important;
+        transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease !important;
+    }
+
+        .btn:hover {
+            background-color: rgba(100, 100, 100, 0.5) !important; /* Adjusted hover background color */
+            color: white !important; /* Adjusted hover text color */
+            transform: scale(1.1) !important;
+        }
+
+        .btn:focus {
+            outline: none !important;
+        }
+
+        .btn:active {
+            transform: scale(0.95) !important;
+        }
+</style>

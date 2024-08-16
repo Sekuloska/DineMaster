@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Restaurant.Domain.Domain.Order>
+
+@{
+    ViewData["Title"] = "All Orders";
+    var deliveryPersons = ViewData["DeliveryPersons"] as SelectList;
+    var deliveryStatuses = ViewData["DeliveryStatuses"] as SelectList;
+}
+
+<h1 style="color: white;">All Orders</h1>
+
+<h2 style="color: white;">Prepared Orders</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="color: white;">Order Date</th>
+            <th style="color: white;">Total Amount</th>
+            <th style="color: white;">Status</th>
+            <th style="color: white;">Delivery Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td style="color: white;">@order.OrderDate?.ToString("yyyy-MM-dd")</td>
+                <td style="color: white;">@order.TotalAmount</td>
+                    <td style="color: white;">@order.Status</td>
+                <td style="color: white;">@order.DeliveryAddress</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+       <!-- @foreach (var order in Model.Where(o => o.DeliveryStatus == "InProgress")) -->
