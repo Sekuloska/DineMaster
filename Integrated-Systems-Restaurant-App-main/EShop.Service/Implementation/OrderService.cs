@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ERestaurant.Repository.Implementation;
+using Restaurant.Domain.Enum;
 
 namespace EShop.Service.Implementation
 {
@@ -70,6 +71,17 @@ namespace EShop.Service.Implementation
             _orderRepository.Update(existingOrder);
         }
 
+        public void UpdateStatus(Guid Id,OrderStatus status)
+        {
+            var order = _orderRepository.Get(Id);
+            if (order == null)
+            {
+                throw new ArgumentNullException(nameof(order));
+            }
 
+            order.Status = status;
+
+            _orderRepository.Update(order);
+        }
     }
 }

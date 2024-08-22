@@ -3,6 +3,7 @@ using EShop.Service.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Restaurant.Domain.Domain;
+using Restaurant.Domain.Enum;
 
 namespace ERestaurant.Web.Controllers.API
 {
@@ -39,6 +40,16 @@ namespace ERestaurant.Web.Controllers.API
 
             return model.Id;
         }
+
+        [HttpPatch("[action]/{Id}/{status}")]
+        public Guid UpdateStatus(Guid Id, OrderStatus status)
+        {
+            //var status = true;
+            _orderService.UpdateStatus(Id, status);
+
+            return Id;
+        }
+
 
     }
 }

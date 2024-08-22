@@ -13,6 +13,7 @@
             <th>Total Amount</th>
             <th>Status</th>
             <th>Delivery Address</th>
+            
             <th></th>
             <th>Create Invoice</th>
         </tr>
@@ -35,6 +36,7 @@
                     </form>
                 </td>
                 <td>@order.DeliveryAddress</td>
+                
                 <td>
                     <a href="@Url.Action("ItemsInOrder", "Order", new { id = order.Id })" class="btn btn-primary">
                         See Items in order

@@ -3,6 +3,7 @@ using AdminApplication.Models.DTO;
 using AdminApplication.Models.ENUM;
 using ClosedXML.Excel;
 using GemBox.Document;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Text;
@@ -28,7 +29,7 @@ namespace AdminApplication.Controllers
             ViewBag.DeliveryStatuses = Enum.GetValues(typeof(OrderStatus)).Cast<OrderStatus>().ToList();
 
             return View(data);
-            
+
         }
 
         public IActionResult ItemsInOrder(Guid id)
@@ -37,7 +38,7 @@ namespace AdminApplication.Controllers
             string URL = "http://localhost:5196/api/OrderApi/GetDetailsForOrder";
             var model = new
             {
-                Id =id
+                Id = id
             };
 
             try
@@ -64,52 +65,30 @@ namespace AdminApplication.Controllers
         [HttpPost]
         public async Task<IActionResult> UpdateStatus(Guid orderId, OrderStatus newStatus)
         {
-            // Fetch the existing order details
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/OrderApi/GetDetailsForOrder";
-            var model = new
-            {
-                Id = orderId
-
-            };
-
-            HttpContent content = new StringContent(JsonConvert.SerializeObject(model), Encoding.UTF8, "application/json");
-
-            HttpResponseMessage response = client.PostAsync(URL, content).Result;
-
-            var order = response.Content.ReadAsAsync<Order>().Result;
-
-           // order.Status = newStatus;
-
-            var order1 = new OrderDto
-            {
-                Id=orderId,
-                userId=order.userId,
-                RestaurantId=order.RestaurantId,
-                OrderDate=order.OrderDate,
-                TotalAmount=order.TotalAmount,
-                Status=newStatus,
-                DeliveryAddress=order.DeliveryAddress
-            };
-
 
             try
             {
-                string URL1 = "http://localhost:5196/api/OrderApi/AddOrder";
+                string url = $"http://localhost:5196/api/OrderApi/UpdateStatus/{orderId}/{newStatus}";
 
+                HttpResponseMessage response = client.PatchAsync(url, null).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    var data = response.Content.ReadAsAsync<Guid>().Result;
+                }
+                else
+                {
+                    Console.WriteLine("Error patching the status of an order!");
+                }
 
-                HttpContent content1 = new StringContent(JsonConvert.SerializeObject(order1), Encoding.UTF8, "application/json");
-
-                HttpResponseMessage response1 = client.PostAsync(URL1, content1).Result;
-                var data = response1.Content.ReadAsAsync<Guid>().Result;
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            
-            return RedirectToAction("Index", "Restaurant");
-           
+
+            return RedirectToAction("");
+
         }
 
         public FileContentResult CreateInvoice(Guid Id)

@@ -56,16 +56,20 @@ namespace ERestaurant.Repository.Implementation
 
         public IEnumerable<T> GetAll()
         {
+            IQueryable<T> query = entities;
+
             if (typeof(T) == typeof(DeliveryPerson))
             {
-                return entities.Include("Restaurant").AsEnumerable();
+                query = query.Include(e => ((DeliveryPerson)(object)e).Restaurant);
             }
-            if (typeof(T) == typeof(Order))
+            else if (typeof(T) == typeof(Order))
             {
-                return entities.Include("ItemInOrders")
-                    .Include("ItemInOrders.MenuItem").AsEnumerable();
+                query = query.Include(e => ((Order)(object)e).ItemInOrders)
+                             .ThenInclude(iio => iio.MenuItem);
+                            
             }
-            return entities.AsEnumerable();
+
+            return query.AsEnumerable();
         }
 
         public void Insert(T entity)
