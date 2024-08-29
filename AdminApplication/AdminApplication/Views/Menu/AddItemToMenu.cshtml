@@ -1,0 +1,90 @@
+﻿@model MenuItem
+
+<h1>Create Menu Item</h1>
+
+<form asp-controller="Menu" asp-action="CreateMenuItem" method="post" style="color:white;" class="content">
+    <div class="form-group" style="margin-bottom:15px;">
+        <label asp-for="MenuId" class="control-label">Menu</label>
+        <select asp-for="MenuId" asp-items="ViewBag.MenuList" class="form-control">
+            <option value="">-- Select a Menu --</option>
+        </select>
+        <span asp-validation-for="MenuId" class="text-danger"></span>
+    </div>
+    <div class="form-group" style="margin-bottom:15px;">
+        <label asp-for="Name" class="control-label">Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group" style="margin-bottom:15px;">
+        <label asp-for="Description" class="control-label">Description</label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group" style="margin-bottom:15px;">
+        <label asp-for="Price" class="control-label">Price</label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-group" style="margin-bottom:15px;">
+        <label asp-for="IsAvailable" class="control-label">Available</label>
+        <input type="checkbox" asp-for="IsAvailable" />
+        <span asp-validation-for="IsAvailable" class="text-danger"></span>
+    </div>
+    <div class="form-group" style="margin-bottom:15px;">
+        <label asp-for="ItemImage" class="control-label">Item Image</label>
+        <input asp-for="ItemImage" class="form-control" />
+        <span asp-validation-for="ItemImage" class="text-danger"></span>
+    </div>
+
+    <div class="form-group" style="margin-bottom:15px;">
+        <input type="submit" value="Create Item" class="btn" />
+    </div>
+</form>
+<style>
+    .content {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        margin: 20px auto;
+        width: 80%;
+        border-radius: 10px;
+    }
+
+        .content dl dt, .content dl dd {
+            font-size: 18px;
+        }
+
+        .content hr {
+            color: white;
+            border-top: 2px solid white;
+        }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        margin-right: 20px;
+        background-color: rgba(180, 178, 178, 0.3);
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    }
+
+        .btn:hover {
+            background-color: rgba(180, 178, 178, 0.5);
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+</style>

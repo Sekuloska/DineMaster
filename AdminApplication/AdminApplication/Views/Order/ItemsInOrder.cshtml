@@ -1,0 +1,104 @@
+﻿@model Order
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title style="color:white;">Items in Order</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container content">
+        <h2 style="color:white;">Order Details</h2>
+
+        <dl class="row">
+            <dt class="col-sm-3">Order Date</dt>
+            <dd class="col-sm-9">@Model.OrderDate</dd>
+
+            <dt class="col-sm-3">Total Amount</dt>
+            <dd class="col-sm-9">@Model.TotalAmount</dd>
+
+            <dt class="col-sm-3">Delivery Address</dt>
+            <dd class="col-sm-9">@Model.DeliveryAddress</dd>
+        </dl>
+
+        <h3>Items in Order</h3>
+        <table class="table">
+            <thead style="color:white;">
+                <tr>
+                    <th>Menu Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody style="color:white;">
+                @foreach (var item in Model.ItemInOrders)
+                {
+                    <tr>
+                        <td>@item.MenuItem.Name</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.MenuItem.Price</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+<style>
+    .content {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        margin: 100px auto;
+        width: 80%;
+        border-radius: 10px;
+    }
+
+        .content dl dt, .content dl dd {
+            font-size: 18px;
+        }
+
+        .content hr {
+            color: white;
+            border-top: 2px solid white;
+        }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        margin-right: 20px;
+        background-color: rgba(180, 178, 178, 0.3);
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    }
+
+        .btn:hover {
+            background-color: rgba(180, 178, 178, 0.5);
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+
+    .footer {
+        white-space: nowrap;
+        line-height: 60px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        line-height: 60px;
+        text-align: center;
+    }
+</style>

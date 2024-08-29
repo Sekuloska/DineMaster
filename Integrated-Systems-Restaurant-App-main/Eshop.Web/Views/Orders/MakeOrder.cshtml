@@ -1,0 +1,133 @@
+﻿﻿@using EShop.Domain
+﻿@using Microsoft.Extensions.Options
+@model ERestaurant.Domain.DTO.OrderViewModel
+@inject IOptions<StripeSettings> Stripe
+
+@{
+    ViewData["Title"] = "Make Order";
+}
+
+<h1>Make Order</h1>
+
+@* <form asp-action="MakeOrder" method="post"> *@
+<form asp-controller="ShoppingCarts" asp-action="PayOrder" method="post" class="stripe-button content">
+    <div class="form-group">
+        <label asp-for="Order.DeliveryAddress" class="control-label"></label>
+        <input asp-for="Order.DeliveryAddress" class="form-control" />
+        <span asp-validation-for="Order.DeliveryAddress" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SelectedRestaurantId" class="control-label">Select Restaurant</label>
+        <select asp-for="SelectedRestaurantId" asp-items="(SelectList)ViewBag.Restaurants" class="form-control">
+            <option value="">Select a restaurant</option>
+        </select>
+        <span asp-validation-for="SelectedRestaurantId" class="text-danger"></span>
+    </div>
+
+@*     <button type="submit" class="btn btn-primary" >Submit</button>
+
+ *@
+    <article>
+        <script src="https://checkout.stripe.com/checkout.js"
+                class="stripe-button"
+                data-key="@Stripe.Value.PublishableKey"
+                data-locale="auto"
+                data-description="EShop Application Payment"
+                data-amount="@(Model.Order.TotalAmount * 100)"
+                data-label="Pay $@Model.Order.TotalAmount">
+        </script>
+    </article>
+
+@*     <form asp-controller="ShoppingCarts" asp-action="PayOrder" method="post" class="stripe-button">
+        <article>
+            <script src="https://checkout.stripe.com/checkout.js"
+                    class="stripe-button"
+                    data-key="@Stripe.Value.PublishableKey"
+                    data-locale="auto"
+                    data-description="EShop Application Payment"
+                    data-amount="@(Model.TotalPrice * 100)"
+                    data-label="Pay $@Model.TotalPrice">
+            </script>
+        </article>
+    </form> *@
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<style>
+    .create {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: rgba(180, 178, 178, 0.5);
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    }
+
+        .create:hover {
+            background-color: rgba(180, 178, 178, 0.5);
+            color: black;
+            transform: scale(1.1);
+        }
+
+        .create:focus {
+            outline: none;
+        }
+
+        .create:active {
+            transform: scale(0.95);
+        }
+
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+  
+
+    .btn-primary {
+        margin-right: 10px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    form {
+        flex: 1;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+
+    .content {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        margin: 20px auto;
+        width: 80%;
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+        .content dl dt, .content dl dd {
+            font-size: 18px;
+        }
+
+        .content hr {
+            color: white;
+            border-top: 2px solid white;
+        }
+</style>

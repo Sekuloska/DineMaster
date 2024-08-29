@@ -1,0 +1,44 @@
+﻿@model Restaurant.Web.ViewModels.OrderDetailsViewModel
+
+<h2>Order Details</h2>
+
+<div>
+    <p><strong>Order Date:</strong> @Model.OrderDate</p>
+    <p><strong>Total Amount:</strong> @Model.TotalAmount</p>
+    <p><strong>Delivery Address:</strong> @Model.DeliveryAddress</p>
+    <p><strong>Order Status:</strong> @Model.OrderStatus</p>
+    <p><strong>Delivery Status:</strong> @Model.OrderStatus</p>
+    <p><strong>Delivery Person:</strong> @Model.DeliveryPersonName</p>
+    <p><strong>Delivery Date:</strong> @Model.DeliveryDate</p>
+
+    <form asp-action="UpdateStatus" method="post">
+        <input type="hidden" name="id" value="@Model.OrderId" />
+        <label for="newStatus">Change Delivery Status:</label>
+        <select name="newStatus" id="newStatus">
+            @* Razor code block to build option elements *@
+            @{
+                var statuses = Enum.GetValues(typeof(Restaurant.Domain.Enum.OrderStatus))
+                .Cast<Restaurant.Domain.Enum.OrderStatus>();
+
+                foreach (var status in statuses)
+                {
+                    var isSelected = status == Model.OrderStatus;
+                    var optionValue = status.ToString();
+                    var selectedAttribute = isSelected ? "selected" : "";
+
+                    // Output the option tag with Html.Raw
+                    @Html.Raw($"<option value=\"{optionValue}\" {selectedAttribute}>{status}</option>")
+                }
+            }
+        </select>
+        <button type="submit">Update Status</button>
+    </form>
+
+    <h3>Items:</h3>
+    <ul>
+        @foreach (var item in Model.Items)
+        {
+            <li>@item.ItemName - Quantity: @item.Quantity - Price: @item.Price</li>
+        }
+    </ul>
+</div>

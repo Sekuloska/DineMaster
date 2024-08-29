@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Restaurant.Domain.Domain.Order>
+
+@{
+    ViewData["Title"] = "All Orders";
+    var deliveryPersons = ViewData["DeliveryPersons"] as SelectList;
+    var deliveryStatuses = ViewData["DeliveryStatuses"] as SelectList;
+}
+
+<h1 style="color: white;">All Orders</h1>
+
+<table class="table content">
+    <thead>
+        <tr>
+            <th style="color: white;">Order Date</th>
+            <th style="color: white;">Total Amount</th>
+            <th style="color: white;">Status</th>
+            <th style="color: white;">Delivery Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td style="color: white;">@order.OrderDate?.ToString("yyyy-MM-dd")</td>
+                <td style="color: white;">@order.TotalAmount</td>
+                    <td style="color: white;">@order.Status</td>
+                <td style="color: white;">@order.DeliveryAddress</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<style>
+    .content {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        margin: 20px auto;
+        width: 80%;
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+    .content dl dt, .content dl dd {
+        font-size: 18px;
+    }
+
+    
+
+    .btn {
+        display: inline-block !important;
+        padding: 12px 24px !important;
+        background-color: rgba(180, 178, 178, 0.5) !important;
+        color: black !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        border: none !important;
+        border-radius: 4px !important;
+        cursor: pointer !important;
+        font-size: 16px !important;
+        transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease !important;
+    }
+
+        .btn:hover {
+            background-color: rgba(100, 100, 100, 0.5) !important; 
+            color: white !important; 
+            transform: scale(1.1) !important;
+        }
+
+        .btn:focus {
+            outline: none !important;
+        }
+
+        .btn:active {
+            transform: scale(0.95) !important;
+        }
+</style>

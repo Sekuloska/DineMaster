@@ -1,0 +1,94 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model List<Restaurant.Domain.Domain.Restaurant>
+
+<h1>Restaurants</h1>
+
+@*<p>
+    <a asp-action="Create" class="btn">Create New</a>
+</p>*@
+
+<div class="container">
+    <div class="row justify-content-center">
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            var item = Model[i];
+            <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img class="card-img-top" src="@item.RestaurantImage" alt="Card image cap">
+                    <div class="card-body">
+                        <h3 class="card-title" style="font-weight:700">@item.Name</h3>
+                        <p class="card-text">@item.Description</p>
+                        <p class="card-text">@item.Address</p>
+                        <p class="card-text">Opening hours: @item.OpeningHours</p>
+                        <h6>Rating: @item.Rating</h6>
+                        <div class="mt-auto">
+                        <a asp-controller="Menues" asp-action="ListMenusForRestaurant" asp-route-restaurantId="@item.Id" class="btn">Menus</a>
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .btn {
+        display: inline-block !important;
+        padding: 12px 20px !important;
+        background-color: rgba(180, 178, 178, 0.5) !important;
+        color: black !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        border: none !important;
+        border-radius: 4px !important;
+        cursor: pointer !important;
+        font-size: 16px !important;
+        transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease !important;
+    }
+
+        .btn:hover {
+            background-color: rgba(100, 100, 100, 0.5) !important; 
+            color: white !important;
+            transform: scale(1.1) !important;
+        }
+
+        .btn:focus {
+            outline: none !important;
+        }
+
+        .btn:active {
+            transform: scale(0.95) !important;
+        }
+     
+    .card {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        
+    }
+
+    .card-img-top {
+        height: 200px; 
+        object-fit: cover;
+    }
+    
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        color: whitesmoke;
+    }
+
+    
+    .mt-auto {
+        margin-top: auto;
+    }
+    
+    .row {
+        justify-content: center;
+    }
+</style>
