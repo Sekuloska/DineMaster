@@ -17,4 +17,10 @@
     <Folder Include="files\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Invoice.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

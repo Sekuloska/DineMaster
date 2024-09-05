@@ -12,7 +12,7 @@ namespace AdminApplication.Controllers
         public IActionResult Index()
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/RestaurantApi/GetAllRestaurants";
+            string URL = "https://dinemaster.azurewebsites.net/api/RestaurantApi/GetAllRestaurants";
             HttpResponseMessage response = client.GetAsync(URL).Result;
 
             var data = response.Content.ReadAsAsync<List<Restaurant>>().Result;
@@ -36,7 +36,7 @@ namespace AdminApplication.Controllers
             List<Restaurant> restaurants = getAllRestaurantsFromFile(file.FileName);
 
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/RestaurantApi/ImportAllRestaurants";
+            string URL = "https://dinemaster.azurewebsites.net/api/RestaurantApi/ImportAllRestaurants";
 
             HttpContent content = new StringContent(JsonConvert.SerializeObject(restaurants), Encoding.UTF8, "application/json");
 
@@ -94,7 +94,7 @@ namespace AdminApplication.Controllers
                 public IActionResult CreateRestaurant([Bind("Name,Address,Phone,Email,OpeningHours,Rating,Description,RestaurantImage")] Restaurant restaurant)
                 {
                     HttpClient client = new HttpClient();
-                    string URL = "http://localhost:5196/api/RestaurantApi/AddRestaurant";
+                    string URL = "https://dinemaster.azurewebsites.net/api/RestaurantApi/AddRestaurant";
                     var model = new Restaurant
                     {
                         Id = Guid.NewGuid(),
@@ -124,7 +124,7 @@ namespace AdminApplication.Controllers
             }
 
             HttpClient client = new HttpClient();
-            string URL = $"http://localhost:5196/api/RestaurantApi/GetRestaurantById/{id}";
+            string URL = $"https://dinemaster.azurewebsites.net/api/RestaurantApi/GetRestaurantById/{id}";
             HttpResponseMessage response;
 
             try
@@ -166,7 +166,7 @@ namespace AdminApplication.Controllers
             }
 
             HttpClient client = new HttpClient();
-            string URL = $"http://localhost:5196/api/RestaurantApi/UpdateRestaurant/{id}";
+            string URL = $"https://dinemaster.azurewebsites.net/api/RestaurantApi/UpdateRestaurant/{id}";
 
             HttpContent content = new StringContent(JsonConvert.SerializeObject(restaurant), Encoding.UTF8, "application/json");
             HttpResponseMessage response = client.PutAsync(URL, content).Result;
@@ -187,7 +187,7 @@ namespace AdminApplication.Controllers
             }
 
             HttpClient client = new HttpClient();
-            string URL = $"http://localhost:5196/api/RestaurantApi/GetRestaurantById/{id}";
+            string URL = $"https://dinemaster.azurewebsites.net/api/RestaurantApi/GetRestaurantById/{id}";
             HttpResponseMessage response;
 
             try
@@ -218,7 +218,7 @@ namespace AdminApplication.Controllers
         public IActionResult DeleteConfirmed(Guid id)
         {
             HttpClient client = new HttpClient();
-            string URL = $"http://localhost:5196/api/RestaurantApi/DeleteRestaurant/{id}";
+            string URL = $"https://dinemaster.azurewebsites.net/api/RestaurantApi/DeleteRestaurant/{id}";
 
             HttpResponseMessage response = client.DeleteAsync(URL).Result;
 
