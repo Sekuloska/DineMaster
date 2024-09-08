@@ -10,7 +10,7 @@ namespace AdminApplication.Controllers
         public IActionResult ListAllItemsInTheMenu(Guid menuId)
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/MenuApi/GetItemsForMenu";
+            string URL = "https://dinemaster.azurewebsites.net/api/MenuApi/GetItemsForMenu";
 
             var model = new
             {
@@ -24,5 +24,27 @@ namespace AdminApplication.Controllers
 
             return View(data);
         }
+        [HttpPost]
+        public IActionResult DeleteMenuItem(Guid menuItemId, Guid menuId)
+        {
+            HttpClient client = new HttpClient();
+            string URL = $"https://dinemaster.azurewebsites.net/api/MenuApi/DeleteMenuItem/{menuItemId}";
+
+            HttpResponseMessage response = client.DeleteAsync(URL).Result;
+
+            if (response.IsSuccessStatusCode)
+            {
+                TempData["SuccessMessage"] = "Menu item deleted successfully.";
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Error deleting menu item.";
+            }
+
+            return RedirectToAction("ListAllItemsInTheMenu", new { menuId });
+        }
+
+
+
     }
 }

@@ -2,6 +2,7 @@
 using ERestaurant.Repository;
 using ERestaurant.Repository.Implementation;
 using ERestaurant.Repository.Interface;
+using ERestaurant.Service;
 using ERestaurant.Service.Implementation;
 using ERestaurant.Service.Interface;
 using EShop.Domain;
@@ -11,12 +12,12 @@ using EShop.Service.Interface;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using NuGet.Protocol.Core.Types;
+using Restaurant.Domain.Domain;
 using Stripe.Climate;
 using System.Reflection.Emit;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
@@ -38,13 +39,9 @@ builder.Services.AddTransient<IMenuItemService, MenuItemService>();
 builder.Services.AddTransient<IShoppingCartService, ShoppingCartService>();
 builder.Services.AddScoped<EShop.Service.Interface.IOrderService, EShop.Service.Implementation.OrderService>();
 builder.Services.AddScoped<ERestaurant.Service.Interface.IDeliveryPersonService, ERestaurant.Service.Implementation.DeliveryPersonService>();
+builder.Services.AddScoped<AlbumService>();
 
-
-
-
-
-
-
+builder.Services.AddHttpClient<AlbumService>();
 
 builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
 
@@ -55,7 +52,6 @@ builder.Services.AddControllersWithViews().AddNewtonsoftJson(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseMigrationsEndPoint();

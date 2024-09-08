@@ -12,7 +12,13 @@
                     <h5 class="item-title">Name: @item.Name</h5>
                     <p class="item-description">Description: @item.Description</p>
                     <p class="item-price">Price: @item.Price</p>
+                   
                 </div>
+                <form method="post" action="@Url.Action("DeleteMenuItem", "MenuItem")">
+                    <input type="hidden" name="menuItemId" value="@item.Id" />
+                    <input type="hidden" name="menuId" value="@item.MenuId" />
+                    <button type="submit" class="btn delete-btn">Delete</button>
+                </form>
             </li>
         }
     </ul>
@@ -28,10 +34,10 @@
     }
 
     .item-image {
-        width: 100px; /* Smaller image width */
-        height: 100px; /* Smaller image height */
+        width: 100px; 
+        height: 100px; 
         object-fit: cover;
-        border-radius: 8px; /* Optional: add rounded corners */
+        border-radius: 8px; 
     }
 
     .item-details {

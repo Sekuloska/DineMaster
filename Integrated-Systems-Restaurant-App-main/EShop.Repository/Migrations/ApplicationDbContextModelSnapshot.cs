@@ -22,6 +22,104 @@ namespace ERestaurant.Repository.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("AlbumArtist", b =>
+                {
+                    b.Property<Guid>("AlbumsId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ArtistsId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("AlbumsId", "ArtistsId");
+
+                    b.HasIndex("ArtistsId");
+
+                    b.ToTable("AlbumArtist");
+                });
+
+            modelBuilder.Entity("ArtistTrack", b =>
+                {
+                    b.Property<Guid>("ArtistsId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("TracksId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("ArtistsId", "TracksId");
+
+                    b.HasIndex("TracksId");
+
+                    b.ToTable("ArtistTrack");
+                });
+
+            modelBuilder.Entity("ERestaurant.Domain.Domain.Album", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CoverImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ReleaseDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Tags")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Type")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Albums");
+                });
+
+            modelBuilder.Entity("ERestaurant.Domain.Domain.Artist", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageAvatarURL")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Tags")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Artists");
+                });
+
             modelBuilder.Entity("ERestaurant.Domain.Domain.EmailMessage", b =>
                 {
                     b.Property<Guid>("Id")
@@ -85,6 +183,39 @@ namespace ERestaurant.Repository.Migrations
                         .HasFilter("[OwnerId] IS NOT NULL");
 
                     b.ToTable("ShoppingCarts");
+                });
+
+            modelBuilder.Entity("ERestaurant.Domain.Domain.Track", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("AlbumId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DateAdded")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Duration")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ListenCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("YoutubeURL")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AlbumId");
+
+                    b.ToTable("Tracks");
                 });
 
             modelBuilder.Entity("EShop.Domain.Identity.CostumerUser", b =>
@@ -357,8 +488,7 @@ namespace ERestaurant.Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("RestaurantId")
-                        .IsUnique();
+                    b.HasIndex("RestaurantId");
 
                     b.ToTable("DeliveryPeople");
                 });
@@ -563,6 +693,36 @@ namespace ERestaurant.Repository.Migrations
                     b.ToTable("Reviews");
                 });
 
+            modelBuilder.Entity("AlbumArtist", b =>
+                {
+                    b.HasOne("ERestaurant.Domain.Domain.Album", null)
+                        .WithMany()
+                        .HasForeignKey("AlbumsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ERestaurant.Domain.Domain.Artist", null)
+                        .WithMany()
+                        .HasForeignKey("ArtistsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ArtistTrack", b =>
+                {
+                    b.HasOne("ERestaurant.Domain.Domain.Artist", null)
+                        .WithMany()
+                        .HasForeignKey("ArtistsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ERestaurant.Domain.Domain.Track", null)
+                        .WithMany()
+                        .HasForeignKey("TracksId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("ERestaurant.Domain.Domain.ItemInShoppingCart", b =>
                 {
                     b.HasOne("Restaurant.Domain.Domain.MenuItem", "MenuItem")
@@ -585,6 +745,17 @@ namespace ERestaurant.Repository.Migrations
                         .HasForeignKey("ERestaurant.Domain.Domain.ShoppingCart", "OwnerId");
 
                     b.Navigation("Owner");
+                });
+
+            modelBuilder.Entity("ERestaurant.Domain.Domain.Track", b =>
+                {
+                    b.HasOne("ERestaurant.Domain.Domain.Album", "Album")
+                        .WithMany("Tracks")
+                        .HasForeignKey("AlbumId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Album");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -656,8 +827,8 @@ namespace ERestaurant.Repository.Migrations
             modelBuilder.Entity("Restaurant.Domain.Domain.DeliveryPerson", b =>
                 {
                     b.HasOne("Restaurant.Domain.Domain.Restaurant", "Restaurant")
-                        .WithOne("DeliveryPerson")
-                        .HasForeignKey("Restaurant.Domain.Domain.DeliveryPerson", "RestaurantId")
+                        .WithMany()
+                        .HasForeignKey("RestaurantId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -737,6 +908,11 @@ namespace ERestaurant.Repository.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("ERestaurant.Domain.Domain.Album", b =>
+                {
+                    b.Navigation("Tracks");
+                });
+
             modelBuilder.Entity("ERestaurant.Domain.Domain.ShoppingCart", b =>
                 {
                     b.Navigation("ItemInShoppingCarts");
@@ -777,8 +953,6 @@ namespace ERestaurant.Repository.Migrations
 
             modelBuilder.Entity("Restaurant.Domain.Domain.Restaurant", b =>
                 {
-                    b.Navigation("DeliveryPerson");
-
                     b.Navigation("Menues");
 
                     b.Navigation("Orders");

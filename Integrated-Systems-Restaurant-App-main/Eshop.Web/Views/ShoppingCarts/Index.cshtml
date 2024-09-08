@@ -7,30 +7,14 @@
     ViewData["Title"] = "Index";
 }
 
-@* <h1>Ready to pay?</h1>
-
-@if (Model.TotalPrice != 0)
-{
-    <form asp-controller="ShoppingCarts" asp-action="PayOrder" method="post" class="stripe-button">
-        <article>
-            <script src="https://checkout.stripe.com/checkout.js"
-                    class="stripe-button"
-                    data-key="@Stripe.Value.PublishableKey"
-                    data-locale="auto"
-                    data-description="EShop Application Payment"
-                    data-amount="@(Model.TotalPrice * 100)"
-                    data-label="Pay $@Model.TotalPrice">
-            </script>
-        </article>
-    </form>
-} *@
+ <h1>Your list of choices</h1>
 
 <a class="btn" asp-action="MakeOrder" asp-controller="Orders">Order</a>
 <table class="table content">
     <thead>
         <tr>
             <th>
-                #
+                
             </th>
             <th>
                 Product name
@@ -114,8 +98,8 @@
     }
 
         .btn:hover {
-            background-color: rgba(100, 100, 100, 0.5) !important; /* Adjusted hover background color */
-            color: white !important; /* Adjusted hover text color */
+            background-color: rgba(100, 100, 100, 0.5) !important; 
+            color: white !important; 
             transform: scale(1.1) !important;
         }
 

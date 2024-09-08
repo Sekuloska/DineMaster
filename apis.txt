@@ -1,0 +1,10 @@
+/api/DeliveryPerson/GetDeliveryPeople
+/api/RestaurantApi/GetAllRestaurants
+/api/RestaurantApi/GetAllRestaurants
+/api/MenuApi/GetAllMenues
+/api/MenuApi/GetMenuesForRestaurant
+/api/MenuApi/GetItemsForMenu
+/api/OrderApi/GetAllOrders
+/api/OrderApi/GetDetails
+/api/RestaurantApi/ImportAllRestaurantsForOrder
+/api/RestaurantApi/GetRestaurantById/{id}

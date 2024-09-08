@@ -12,7 +12,7 @@ namespace AdminApplication.Controllers
         public IActionResult Index()
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/RestaurantApi/GetAllRestaurants";
+            string URL = "https://dinemaster.azurewebsites.net/api/RestaurantApi/GetAllRestaurants";
             HttpResponseMessage response = client.GetAsync(URL).Result;
 
             var data = response.Content.ReadAsAsync<List<Restaurant>>().Result;
@@ -36,7 +36,7 @@ namespace AdminApplication.Controllers
             List<Restaurant> restaurants = getAllRestaurantsFromFile(file.FileName);
 
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/RestaurantApi/ImportAllRestaurants";
+            string URL = "https://dinemaster.azurewebsites.net/api/RestaurantApi/ImportAllRestaurants";
 
             HttpContent content = new StringContent(JsonConvert.SerializeObject(restaurants), Encoding.UTF8, "application/json");
 
@@ -94,7 +94,7 @@ namespace AdminApplication.Controllers
                 public IActionResult CreateRestaurant([Bind("Name,Address,Phone,Email,OpeningHours,Rating,Description,RestaurantImage")] Restaurant restaurant)
                 {
                     HttpClient client = new HttpClient();
-                    string URL = "http://localhost:5196/api/RestaurantApi/AddRestaurant";
+                    string URL = "https://dinemaster.azurewebsites.net/api/RestaurantApi/AddRestaurant";
                     var model = new Restaurant
                     {
                         Id = Guid.NewGuid(),
@@ -116,7 +116,124 @@ namespace AdminApplication.Controllers
                     return RedirectToAction("Index", "Restaurant");
                 }
 
+        public IActionResult Edit(Guid? id)
+        {
+            if (id == null)
+            {
+                return NotFound("Restaurant ID not provided.");
+            }
+
+            HttpClient client = new HttpClient();
+            string URL = $"https://dinemaster.azurewebsites.net/api/RestaurantApi/GetRestaurantById/{id}";
+            HttpResponseMessage response;
+
+            try
+            {
+                response = client.GetAsync(URL).Result;
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    string errorMsg = $"Failed to fetch restaurant details. Status Code: {response.StatusCode}, Reason: {response.ReasonPhrase}";
+                    return StatusCode((int)response.StatusCode, errorMsg);
+                }
+
+                var restaurant = response.Content.ReadAsAsync<Restaurant>().Result;
+
+                if (restaurant == null)
+                {
+                    return NotFound("Restaurant not found.");
+                }
+
+                return View(restaurant);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(Guid id, [Bind("Id,Name,Address,Phone,Email,OpeningHours,Rating,Description,RestaurantImage")] Restaurant restaurant)
+        {
+            if (id != restaurant.Id)
+            {
+                return BadRequest("Mismatched Restaurant ID.");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return View(restaurant);
+            }
+
+            HttpClient client = new HttpClient();
+            string URL = $"https://dinemaster.azurewebsites.net/api/RestaurantApi/UpdateRestaurant/{id}";
+
+            HttpContent content = new StringContent(JsonConvert.SerializeObject(restaurant), Encoding.UTF8, "application/json");
+            HttpResponseMessage response = client.PutAsync(URL, content).Result;
+
+            if (!response.IsSuccessStatusCode)
+            {
+                ModelState.AddModelError("", "Failed to update the restaurant. Please try again.");
+                return View(restaurant);
+            }
+
+            return RedirectToAction("Index");
+        }
+        public IActionResult Delete(Guid? id)
+        {
+            if (id == null)
+            {
+                return NotFound("Restaurant ID not provided.");
+            }
+
+            HttpClient client = new HttpClient();
+            string URL = $"https://dinemaster.azurewebsites.net/api/RestaurantApi/GetRestaurantById/{id}";
+            HttpResponseMessage response;
+
+            try
+            {
+                response = client.GetAsync(URL).Result;
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    string errorMsg = $"Failed to fetch restaurant details. Status Code: {response.StatusCode}, Reason: {response.ReasonPhrase}";
+                    return StatusCode((int)response.StatusCode, errorMsg);
+                }
+
+                var restaurant = response.Content.ReadAsAsync<Restaurant>().Result;
+
+                if (restaurant == null)
+                {
+                    return NotFound("Restaurant not found.");
+                }
+
+                return View(restaurant);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+        [HttpPost]
+        public IActionResult DeleteConfirmed(Guid id)
+        {
+            HttpClient client = new HttpClient();
+            string URL = $"https://dinemaster.azurewebsites.net/api/RestaurantApi/DeleteRestaurant/{id}";
+
+            HttpResponseMessage response = client.DeleteAsync(URL).Result;
+
+            if (!response.IsSuccessStatusCode)
+            {
+                return StatusCode(500, "Failed to delete the restaurant. Please try again.");
+            }
+
+            return Ok();
+        }
+
+
+
+
 
     }
 
- }
+}

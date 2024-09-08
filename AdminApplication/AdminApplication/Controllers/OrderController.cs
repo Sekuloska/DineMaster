@@ -21,7 +21,7 @@ namespace AdminApplication.Controllers
         public IActionResult Index()
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/OrderApi/GetAllOrders";
+            string URL = "https://dinemaster.azurewebsites.net/api/OrderApi/GetAllOrders";
 
             HttpResponseMessage response = client.GetAsync(URL).Result;
 
@@ -35,7 +35,7 @@ namespace AdminApplication.Controllers
         public IActionResult ItemsInOrder(Guid id)
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/OrderApi/GetDetailsForOrder";
+            string URL = "https://dinemaster.azurewebsites.net/api/OrderApi/GetDetailsForOrder";
             var model = new
             {
                 Id = id
@@ -69,7 +69,7 @@ namespace AdminApplication.Controllers
 
             try
             {
-                string url = $"http://localhost:5196/api/OrderApi/UpdateStatus/{orderId}/{newStatus}";
+                string url = $"https://dinemaster.azurewebsites.net/api/OrderApi/UpdateStatus/{orderId}/{newStatus}";
 
                 HttpResponseMessage response = client.PatchAsync(url, null).Result;
                 if (response.IsSuccessStatusCode)
@@ -94,7 +94,7 @@ namespace AdminApplication.Controllers
         public FileContentResult CreateInvoice(Guid Id)
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/OrderApi/GetDetailsForOrder";
+            string URL = "https://dinemaster.azurewebsites.net/api/OrderApi/GetDetailsForOrder";
             var model = new
             {
                 Id = Id
@@ -141,7 +141,7 @@ namespace AdminApplication.Controllers
                 worksheet.Cell(1, 2).Value = "Customer ID";
 
                 HttpClient client = new HttpClient();
-                string URL = "http://localhost:5196/api/OrderApi/GetAllOrders";
+                string URL = "https://dinemaster.azurewebsites.net/api/OrderApi/GetAllOrders";
                 HttpResponseMessage response = client.GetAsync(URL).Result;
 
                 var data = response.Content.ReadAsAsync<List<Order>>().Result;

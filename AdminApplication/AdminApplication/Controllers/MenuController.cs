@@ -11,7 +11,7 @@ namespace AdminApplication.Controllers
         public IActionResult Create()
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/RestaurantApi/GetAllRestaurants";
+            string URL = "https://dinemaster.azurewebsites.net/api/RestaurantApi/GetAllRestaurants";
             HttpResponseMessage response = client.GetAsync(URL).Result;
 
             var data = response.Content.ReadAsAsync<List<Restaurant>>().Result;
@@ -22,7 +22,7 @@ namespace AdminApplication.Controllers
         public IActionResult CreateMenu([Bind("Name,Description,IsActive,RestaurantId")] Menu menu)
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/MenuApi/CreateMenu";
+            string URL = "https://dinemaster.azurewebsites.net/api/MenuApi/CreateMenu";
             var model = new Menu
             {
                 Id = Guid.NewGuid(),
@@ -42,7 +42,7 @@ namespace AdminApplication.Controllers
         public IActionResult AddItemToMenu()
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/MenuApi/GetAllMenues";
+            string URL = "https://dinemaster.azurewebsites.net/api/MenuApi/GetAllMenues";
             HttpResponseMessage response = client.GetAsync(URL).Result;
 
             var data = response.Content.ReadAsAsync<List<Menu>>().Result;
@@ -53,7 +53,7 @@ namespace AdminApplication.Controllers
         public IActionResult CreateMenuItem([Bind("MenuId,Name,Description,Price,IsAvailable,ItemImage")] MenuItem menuItem)
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/MenuApi/CreateMenuItem";
+            string URL = "https://dinemaster.azurewebsites.net/api/MenuApi/CreateMenuItem";
             var model = new MenuItem
             {
                 Id = Guid.NewGuid(),
@@ -76,7 +76,7 @@ namespace AdminApplication.Controllers
         public IActionResult ListMenusForRestaurant(Guid restaurantId)
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/MenuApi/GetMenuesForRestaurant";
+            string URL = "https://dinemaster.azurewebsites.net/api/MenuApi/GetMenuesForRestaurant";
 
             var model = new
             {

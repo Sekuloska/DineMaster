@@ -3,6 +3,7 @@ using ERestaurant.Service.Implementation;
 using ERestaurant.Service.Interface;
 using EShop.Domain.Identity;
 using EShop.Service.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -12,6 +13,7 @@ using System.Security.Claims;
 
 namespace Restaurant.Web.Controllers
 {
+    [Authorize]
     public class OrdersController : Controller
     {
         private readonly IOrderService _orderService;

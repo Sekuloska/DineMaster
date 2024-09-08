@@ -85,7 +85,18 @@ namespace ERestaurant.Web.Controllers.API
         {
             return _menuItemService.GetAllItemsInMenu(model.Id);
         }
+        [HttpDelete("[action]/{id}")]
+        public IActionResult DeleteMenuItem(Guid id)
+        {
+            var menuItem = _menuItemService.GetDetailsMenuItem(id);
+            if (menuItem == null)
+            {
+                return NotFound("MenuItem not found.");
+            }
 
+            _menuItemService.DeleteMenuItem(id);
+            return Ok("MenuItem deleted successfully.");
+        }
 
 
 

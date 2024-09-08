@@ -11,7 +11,7 @@ namespace AdminApplication.Controllers
         public IActionResult Index()
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/DeliveryPerson/GetDeliveryPeople";
+            string URL = "https://dinemaster.azurewebsites.net/api/DeliveryPerson/GetDeliveryPeople";
 
             HttpResponseMessage response = client.GetAsync(URL).Result;
 
@@ -23,7 +23,7 @@ namespace AdminApplication.Controllers
         public IActionResult Create()
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/RestaurantApi/GetAllRestaurants";
+            string URL = "https://dinemaster.azurewebsites.net/api/RestaurantApi/GetAllRestaurants";
 
             HttpResponseMessage response = client.GetAsync(URL).Result;
 
@@ -35,7 +35,7 @@ namespace AdminApplication.Controllers
         public IActionResult CreateDeliveryPerson([Bind("RestaurantId,Name,Phone,Vehicle")] DeliveryPerson deliveryPerson)
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5196/api/DeliveryPerson/CreateDeliveryPerson";
+            string URL = "https://dinemaster.azurewebsites.net/api/DeliveryPerson/CreateDeliveryPerson";
             var model = new DeliveryPerson
             {
                 Id = Guid.NewGuid(),

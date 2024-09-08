@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace ERestaurant.Service.Implementation
 {
-   
+    
     public class ShoppingCartService : IShoppingCartService
     {
         private readonly IRepository<ShoppingCart> _shoppingCartRepository;
@@ -66,8 +66,8 @@ namespace ERestaurant.Service.Implementation
             var userShoppingCart = loggedInUser?.ShoppingCart;
             var product = userShoppingCart?.ItemInShoppingCarts.Where(x => x.MenuItemId == productId).FirstOrDefault();
 
-            userShoppingCart.ItemInShoppingCarts.Remove(product);
-            _shoppingCartRepository.Update(userShoppingCart);
+            _productInShoppingCartRepository.Delete(product);
+           // _shoppingCartRepository.Update(userShoppingCart);
             return true;
         }
 

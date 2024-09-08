@@ -1,0 +1,134 @@
+﻿@model IEnumerable<ERestaurant.Domain.Domain.Album>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Where Music Meets Meals!</h1>
+<div class="home">
+    <p class="text">Introducing "Tune and Dine,"<br />
+        the perfect harmony between Rhapsody, your favorite music store, and DineMaster, your go-to restaurant ordering system! <br /> 
+        Now, while you savor delicious dishes from DineMaster, you can discover exclusive music playlists curated by Rhapsody. Elevate your dining experience with the perfect soundtrack for every bite.
+        Get ready to groove and grub – because the best meals always come with a side of great music!
+       <br/> <br />Please visit <a href="https://musicstoreweb20240902150809.azurewebsites.net/">Rhapsody</a> for more information.</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        @foreach (var album in Model)
+        {
+            <div class="col-md-3 mb-4 d-flex align-items-stretch">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img src="@album.CoverImageUrl" class="card-img-top" alt="Cover Image" />
+                    <div class="card-body">
+                        <h3 class="card-title">@album.Title</h3>
+                        <p class="card-text">
+                            @if (album.Artists != null && album.Artists.Any())
+                            {
+                                @foreach (var artist in album.Artists)
+                                {
+                                    <h6>@artist.Name</h6>
+                                }
+                            }
+                            else
+                            {
+                                <p>No artists</p>
+                            }
+                        </p>
+                        <p class="card-text">@album.Type</p>
+                        <p class="card-text">@album.Description</p>
+                        <div class="mt-auto">
+                            <a href="https://musicstoreweb20240902150809.azurewebsites.net/Albums/Details/{@album.Id}" class="btn">Jam On</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .text {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        margin: 20px auto;
+        width: 80%;
+        border-radius: 10px;
+        padding-top:70px;
+    }
+
+   
+
+    /* .container {
+        margin-top: 20px;
+    } */
+
+
+    .card {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        color: whitesmoke;
+    }
+
+
+    .mt-auto {
+        margin-top: auto;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    .btn {
+        display: inline-block !important;
+        padding: 12px 20px !important;
+        background-color: rgba(180, 178, 178, 0.5) !important;
+        color: black !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        border: none !important;
+        border-radius: 4px !important;
+        cursor: pointer !important;
+        font-size: 16px !important;
+        transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease !important;
+    }
+
+        .btn:hover {
+            background-color: rgba(100, 100, 100, 0.5) !important;
+            color: white !important;
+            transform: scale(1.1) !important;
+        }
+
+        .btn:focus {
+            outline: none !important;
+        }
+
+        .btn:active {
+            transform: scale(0.95) !important;
+        }
+
+        a{
+            color: coral;
+        }
+
+        a:active{
+            color: coral;
+        }
+
+        a:hover{
+            color: coral;
+        }
+
+</style>

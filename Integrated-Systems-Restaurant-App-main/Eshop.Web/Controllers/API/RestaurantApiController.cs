@@ -72,6 +72,61 @@ namespace ERestaurant.Web.Controllers.API
             }
             return status;
         }
+        [HttpGet("[action]/{id}")]
+        public ActionResult<Restaurant.Domain.Domain.Restaurant> GetRestaurantById(Guid id)
+        {
+            var restaurant = _restaurantService.GetDetailsForRestaurant(id);
+
+            if (restaurant == null)
+            {
+                return NotFound("Restaurant not found.");
+            }
+
+            return Ok(restaurant);
+        }
+        [HttpPut("[action]/{id}")]
+        public ActionResult<bool> UpdateRestaurant(Guid id, [FromBody] RestaurantDto model)
+        {
+            if (id != model.Id)
+            {
+                return BadRequest("Mismatched Restaurant ID.");
+            }
+
+            var restaurantToUpdate = _restaurantService.GetDetailsForRestaurant(id);
+
+            if (restaurantToUpdate == null)
+            {
+                return NotFound("Restaurant not found.");
+            }
+
+            restaurantToUpdate.Name = model.Name;
+            restaurantToUpdate.Address = model.Address;
+            restaurantToUpdate.Phone = model.Phone;
+            restaurantToUpdate.Email = model.Email;
+            restaurantToUpdate.OpeningHours = model.OpeningHours;
+            restaurantToUpdate.Rating = model.Rating;
+            restaurantToUpdate.Description = model.Description;
+            restaurantToUpdate.RestaurantImage = model.RestaurantImage;
+
+            _restaurantService.UpdateNewRestaurant(restaurantToUpdate);
+
+            return Ok(true);
+        }
+        [HttpDelete("[action]/{id}")]
+        public ActionResult<bool> DeleteRestaurant(Guid id)
+        {
+            var restaurant = _restaurantService.GetDetailsForRestaurant(id);
+
+            if (restaurant == null)
+            {
+                return NotFound("Restaurant not found.");
+            }
+
+            _restaurantService.DeleteRestaurant(id);
+            return Ok(true);
+        }
+
+
 
     }
 }

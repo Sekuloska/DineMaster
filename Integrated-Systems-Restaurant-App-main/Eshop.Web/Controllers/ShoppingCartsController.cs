@@ -3,30 +3,36 @@ using ERestaurant.Domain.DTO;
 using ERestaurant.Service.Interface;
 using EShop.Domain.Identity;
 using EShop.Service.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Org.BouncyCastle.Asn1.X9;
 using Restaurant.Domain.Domain;
 using Restaurant.Domain.Enum;
+using SQLitePCL;
 using Stripe;
 using System.Security.Claims;
 
+
 namespace ERestaurant.Web.Controllers
 {
+    [Authorize]
     public class ShoppingCartsController : Controller
     {
         private readonly IShoppingCartService _shoppingCartService;
         private readonly UserManager<CostumerUser> _userManager;
         private readonly IRestaurantService _restaurantService;
         private readonly IOrderService _orderService;
+        private readonly IMenuItemService _menuItemService;
 
-        public ShoppingCartsController(IShoppingCartService _shoppingCartService, UserManager<CostumerUser> userManager, IRestaurantService restaurantService, IOrderService orderService)
+        public ShoppingCartsController(IShoppingCartService _shoppingCartService, UserManager<CostumerUser> userManager, IRestaurantService restaurantService, IOrderService orderService,IMenuItemService menuItemService )
         {
             this._shoppingCartService = _shoppingCartService;
             this._userManager = userManager;
             this._restaurantService = restaurantService;
             this._orderService = orderService;
-
+            this._menuItemService = menuItemService;
         }
         public IActionResult Index()
         {
@@ -131,5 +137,14 @@ namespace ERestaurant.Web.Controllers
                 Quantity = item.Quantity
             }).ToList();
         }
+
+        public IActionResult DeleteFromShoppingCart(Guid id)
+        {
+            var user = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var result=_shoppingCartService.deleteProductFromShoppingCart(user, id);
+            
+            return RedirectToAction("Index", "ShoppingCarts");
+        }
+
     }
 }
