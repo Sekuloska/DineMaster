@@ -1,23 +1,66 @@
-# 🍽️ DineMaster – Веб апликација за управување со ресторани и нарачки
+# 🍽️ DineMaster
+## A complete end-to-end restaurant ordering ecosystem — from customer browsing to admin management, payments, invoices & data import/export.
 
-DineMaster е веб апликација изградена за да им овозможи на корисниците да истражуваат ресторани, разгледуваат менија, прават нарачки и следат испораки. Апликацијата е прилагодена и за административно користење, овозможувајќи едноставно менаџирање на менија, храна во менијата и статус на нарачки.
+<br>
 
----
+<div align="center">
 
-## ✨ Главни функционалности
+✨ Client App (End-User) + 👨‍💼 Admin App (SuperUser)
+ · 💳 Stripe Payments · 📄 PDF Invoice Export · 📊 Excel Import/Export
+🔗 REST API communication between apps
 
-- 🧑‍🍳 Регистрација и најава на корисници
-- 🍽️ Преглед на ресторани и нивните менија
-- 🛒 Додавање производи во кошничка
-- 🧾 Креирање и преглед на нарачки
-- 📦 Следење на статус на испорака (Processing, Prepared, Shipped, Delivered)
-- 🛠️ Административен панел за уредување ресторани, менија и нарачки
+</div>
+<br>
+
+## ✨ Client App (End-User)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Sekuloska/DineMaster/master/screenshots/ClientApp.png" width="800"/>
+</div>
 
 
-### Линк до страната:
-[dinemaster.azurewebsites.net](https://dinemaster.azurewebsites.net/)
+<br>
 
-### Автори:
-- Христина Секулоска (211236)
-- Моника Цанева (211103)
-- Антоанета Јорданова (211081)
+## 💳 Stripe Payments
+<div align="center">
+   <img src="./screenshots/payment.png" width="800"/>
+</div>
+<br>
+
+
+## 👨‍💼 Admin App (SuperUser)
+<div align="center">
+   <img src="./screenshots/AdminApp.png" width="800"/>
+</div>
+<br>
+
+<!-- <div  align="center">
+
+                         ┌─────────────────────────┐
+                         │     Client App (MVC)     │
+                         │  Restaurants · Cart ·     │
+                         │  Orders · Stripe Payment  │
+                         └───────────▲──────────────┘
+                                     │ REST API Calls
+                                     │
+                         ┌───────────┴──────────────┐
+                         │  Client API Controllers   │
+                         │ (.NET Web API Layer)      │
+                         └───────────▲──────────────┘
+                                     │
+                         ┌───────────┴──────────────┐
+                         │    Admin Application      │
+                         │  Create menus, items,     │
+                         │  export, import, invoices │
+                         └───────────────────────────┘
+
+Database: SQL (shared)
+Payments: Stripe
+Invoices: DOCX → PDF Export
+
+  
+</div> -->
+
+<br> 
+
+Link: [dinemaster.azurewebsites.net](https://dinemaster.azurewebsites.net/)
+
